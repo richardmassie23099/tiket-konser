@@ -17,7 +17,7 @@ class Home extends CI_Controller {
             if ($this->session->userdata('is_login') != true) {
                 redirect('login') ;
             }
-            $this->load->model('m_barang') ;
+            $this->load->model('m_tiket') ;
         }
     
 
