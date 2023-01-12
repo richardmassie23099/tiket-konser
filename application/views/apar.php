@@ -22,12 +22,11 @@
         <div class="dropdown btn-group">
             <?php if ($_SESSION['hak_akses'] == 'O' or $_SESSION['hak_akses'] == 'A' ) { ?>
                 <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <i class="fa fa-print"></i>  Print Laporan
+                    <i class="fa fa-print"></i>  Print Tiket
                     <span class="caret"></span>
                 </button>
                     <ul class="dropdown-menu inline" type="button" aria-labelledby="dropdownMenu1">
-                        <li class="dropdown-item"><a href="<?php echo base_url('apar/print_apar') ?>"><i class="fas fa-file-pdf"></i> Print Semua Data</a></li>
-                        <li class="dropdown-item"><a href="<?php echo base_url('apar/cetak_apar') ?>"><i class="fas fa-file-pdf"></i> Pilihan Lain</a></li>
+                        <li class="dropdown-item"><a href="<?php echo base_url('apar/print_apar') ?>"><i class="fas fa-file-pdf"></i> Format PDF</a></li>
                     </ul>
             <?php } ?>
         </div><br><br>
